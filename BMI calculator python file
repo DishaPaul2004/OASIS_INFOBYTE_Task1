@@ -6,6 +6,7 @@ height=float(input("Enter your height : "))
 weight=float(input("Enter your weight : "))
 
 bmi=weight/(pow(height,2))
+bmi=round(bmi,2)
 
 if bmi<=18.5:
     category="Underweight"
@@ -16,6 +17,6 @@ elif bmi>=25 and bmi<=29.9:
 else:
     category="Obesity"
 
-print("Your BMI is ",bmi)
-
-print("The category of your weight based on your BMI is ",category)
+print(end="\n")
+print("Your BMI is",bmi)
+print("The category of your weight based on your BMI is",category)
