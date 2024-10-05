@@ -1,0 +1,21 @@
+print("\tBMI CALCULATOR\t")
+
+print("To get your BMI,\nEnter your height in m and\nEnter your weight in kg\n")
+
+height=float(input("Enter your height : "))
+weight=float(input("Enter your weight : "))
+
+bmi=weight/(pow(height,2))
+
+if bmi<=18.5:
+    category="Underweight"
+elif bmi>18.5 and bmi<=24.9:
+    category="Normal weight"
+elif bmi>=25 and bmi<=29.9:
+    category="Overweight"
+else:
+    category="Obesity"
+
+print("Your BMI is ",bmi)
+
+print("The category of your weight based on your BMI is ",category)
